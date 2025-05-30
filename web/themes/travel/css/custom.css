@@ -1,0 +1,151 @@
+.js-relap-widget-wrapper {
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+.sp-form[sp-id="121495"] {
+    margin: 40px 0 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    background: none !important;
+}
+
+.sp-form-outer * {
+    font-size: 18px !important;
+    font-weight: normal !important;
+    font-family: 'bebas_neue_regularregular', sans-serif !important;
+}
+
+.sp-field-horizontal .sp-field .sp-form-control {
+    font-family: 'helioscondregular', sans-serif !important;
+}
+
+.sp-message * {
+    /*color: #fff !important;*/
+    font-family: 'helioscondregular', sans-serif !important;
+    text-align: center !important;
+    line-height: 1.2;
+}
+
+.sp-field-horizontal .sp-field .sp-form-control::-webkit-input-placeholder {
+    opacity: 0 !important;
+    color: #c1c1c1 !important;
+}
+
+.sp-field-horizontal .sp-field .sp-form-control::-moz-placeholder {
+    opacity: 0 !important;
+    color: #c1c1c1 !important;
+}
+
+@media screen and (max-width: 640px) {
+    .sp-field-horizontal .sp-field .sp-form-control::-webkit-input-placeholder {
+        opacity: 1 !important;
+    }
+
+    .sp-field-horizontal .sp-field .sp-form-control::-moz-placeholder {
+        opacity: 1 !important;
+    }
+}
+
+.sp-form .sp-field > .sp-control-label > span + strong {
+    display: none;
+}
+
+.sp-form .sp-field .sp-tip {
+    font-family: 'helioscondregular', sans-serif !important;
+    font-size: 14px !important;
+}
+
+.sp-form .sp-lg .sp-field .sp-button {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    background: rgba(0, 0, 0, 0.5) !important;
+    color: white !important;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid #fff !important;
+}
+
+.sp-form .sp-lg .sp-field .sp-button:hover {
+    position: static !important;
+    background: #fff !important;
+    color: #000 !important;
+    opacity: 1 !important;
+}
+
+@media (min-width: 480px) {
+    .sp-field-horizontal .sp-field > .sp-control-label {
+        /*width: 30% !important;*/
+        text-align: right;
+    }
+
+    .sp-field-horizontal .sp-field .sp-form-control {
+        /*width: 70% !important;*/
+    }
+
+    .sp-field-horizontal .sp-field .sp-tip {
+        /*left: 30% !important;*/
+    }
+}
+
+@media (min-width: 1025px) {
+    .text-with-banner {
+        display: flex;
+        /*justify-content: center;*/
+    }
+
+    .col-text {
+        max-width: calc(100% - 300px);
+        /*padding-right: 40px;*/
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .col-banner [id^="adfox_"] > * {
+        /*width: 240px;*/
+        margin-left: 60px !important;
+    }
+
+    .col-banner [id^="adfox_"] [id^="yandex_rtb_"] {
+        width: 240px;
+        /*margin-left: 60px !important;*/
+    }
+}
+
+@media (max-width: 1024px) {
+    .col-banner {
+        width: 100%;
+        margin: 20px auto;
+    }
+}
+
+/* latest news on news post page */
+.latest-news {
+    padding-left: 0 !important;
+    margin-top: 70px !important;
+    font-size: 1rem;
+}
+
+.latest-news * {
+    box-sizing: border-box;
+}
+
+.latest-news .news-list li {
+    width: 33% !important;
+}
+
+@media screen and (max-width: 1023px) and (min-width: 640px) {
+    .latest-news .news-list li {
+        width: 49% !important;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .latest-news .news-list li {
+        width: 100% !important;
+    }
+}
+
+.post-title-box {
+    max-height: calc(100vh - 265px);
+}

@@ -1,0 +1,1 @@
+ALTER TABLE `tr_post` ADD `image_home_top` varchar(255) NULL AFTER `is_home_top`;

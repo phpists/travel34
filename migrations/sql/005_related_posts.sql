@@ -1,0 +1,1 @@
+ALTER TABLE `tr_post` ADD `related_posts` VARCHAR(255) DEFAULT NULL;

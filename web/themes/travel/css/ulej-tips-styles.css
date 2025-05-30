@@ -1,0 +1,237 @@
+.ulej-tips {
+    font-family: 'helioscondregular', -apple-system, BlinkMacSystemFont,'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    padding-top: 31px;
+    padding-bottom: 76px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.ulej-tips *,
+.ulej-tips *:before,
+.ulej-tips *:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+.ulej-tips--blue {
+    background-color: #596DD3;
+}
+.ulej-tips--violet {
+    background-color: #847daf;
+}
+.ulej-tips--light-blue {
+    background-color: #bed8e3;
+}
+.ulej-tips--green {
+    background-color: #5acea4;
+}
+.ulej-tips-content {
+    max-width: 520px;
+    margin: 0 auto;
+    text-align: center;
+}
+.ulej-tips-img {
+    margin-bottom: 24px !important;
+    width: 88px !important;
+    height: 88px !important;
+}
+.ulej-tips-heading {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: bebas_neuebold, -apple-system,BlinkMacSystemFont,'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.ulej-tips-subheading {
+    display: block;
+    max-width: 240px;
+    margin: 5px auto 0;
+    font-family: 'helioscondregular', -apple-system,BlinkMacSystemFont,'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0;
+    text-transform: none;
+}
+.ulej-tips-actions {
+    font-family: bebas_neuebold, -apple-system,BlinkMacSystemFont,'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+@media screen and (min-width: 580px) {
+    .ulej-tips-actions {
+        padding-right: 107px;
+        margin-top: 47px;
+    }
+}
+.ulej-tips-dt {
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    line-height: 1;
+    letter-spacing: 2px;
+}
+@media screen and (min-width: 580px) {
+    .ulej-tips-dt {
+        display: inline-block;
+        margin-top: 0;
+        margin-bottom: 0;
+        vertical-align: top;
+        text-align: left;
+        padding-top: 14px;
+    }
+}
+.ulej-tips-dd {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    position: relative;
+    width: 100%;
+    margin-left: 0;
+    max-width: 267px;
+    line-height: 44px;
+    z-index: 1;
+}
+@media screen and (min-width: 580px) {
+    .ulej-tips-dd {
+        margin-left: 14px;
+    }
+}
+.ulej-tips-field {
+    position: relative;
+    white-space: nowrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+@media screen and (min-width: 580px) {
+    .ulej-tips-field {
+        display: block;
+    }
+}
+.ulej-tips-field__selected-value,
+.ulej-tips-field-expand-btn {
+    display: inline-block;
+    height: 44px;
+    vertical-align: top;
+    background-color: #FFF;
+    cursor: pointer;
+}
+.ulej-tips-field__selected-value {
+    width: 100%;
+    margin-right: 2px;
+    padding: 14px 16px;
+    line-height: 1;
+}
+@media screen and (min-width: 580px) {
+    .ulej-tips-field__selected-value {
+        margin-right: 0;
+    }
+}
+.ulej-tips-field-expand-btn {
+    padding: 12px 12px;
+    border: 0;
+    outline: none;
+}
+.ulej-tips-field__values-list {
+    display: none;
+    position: absolute;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    background-color: #FFF;
+    list-style: none;
+}
+@media screen and (min-width: 580px) {
+    .ulej-tips-field__values-list {
+        width: 100%;
+    }
+}
+.ulej-tips-field__value {
+    padding-right: 16px;
+    padding-left: 16px;
+    line-height: 38px;
+    cursor: pointer;
+}
+.ulej-tips-field__value:hover {
+    background-color: #38c08e;
+}
+.value {
+    display: inline-block;
+    letter-spacing: 2px;
+    pointer-events: none;
+}
+.value + .value {
+    margin-left: 10px;
+}
+.value--BYN {
+    color: #000;
+}
+.value--USD {
+    color: #C4C3C2;
+}
+
+.ulej-tips-field__value:hover .value {
+    color: #FFF;
+}
+.ulej-tips-field.is-opened .ulej-tips-field__values-list {
+    display: block;
+    top: 44px;
+    left: 0;
+    right: 46px;
+}
+@media screen and (min-width: 580px) {
+    .ulej-tips-field.is-opened .ulej-tips-field__values-list {
+        top: auto;
+        left: auto;
+        right: auto;
+    }
+}
+.ulej-tips-field-expand-icon {
+    -webkit-transition: -webkit-transform ease-out .2s;
+    transition: -webkit-transform ease-out .2s;
+    transition: transform ease-out .2s;
+    transition: transform ease-out .2s, -webkit-transform ease-out .2s
+}
+.ulej-tips-field.is-opened .ulej-tips-field-expand-icon {
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+.ulej-tips-btn {
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+    border: #000 3px solid;
+    background-color: #fff;
+    padding: 18px 28px 16px;
+    font-family: bebas_neuebold, -apple-system,BlinkMacSystemFont,'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #000;
+    line-height: 1;
+    letter-spacing: 2px;
+    text-decoration: none;
+    -webkit-box-shadow: 7px 7px 0 0 #000;
+    box-shadow: 7px 7px 0 0 #000;
+    cursor: pointer;
+    -webkit-transition: background-color .2s ease-out;
+    transition: background-color .2s ease-out;
+}
+@media screen and (min-width: 580px) {
+    .ulej-tips-btn {
+        margin-top: 70px;
+    }
+}
+.ulej-tips-btn:hover {
+    /*background-color: #63FFCA;*/
+    -webkit-transition: background-color 0s;
+    transition: background-color 0s;
+}

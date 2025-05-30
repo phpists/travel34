@@ -1,0 +1,350 @@
+body {
+    background: url(../img/tiny_grid.png) repeat 0 0;
+}
+.font-monospace {
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+div.cont {
+    height: 100%;
+    min-height: 768px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+@media (max-width: 979px) {
+    div.cont {
+        padding-top: 0;
+    }
+}
+.sidebar-nav {
+    padding: 9px 0;
+}
+.main {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #dedede;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    min-height: 250px;
+    position: relative;
+}
+.export-button {
+    position: absolute;
+    top: 65px;
+}
+.f-left {
+    float: left
+}
+.f-right {
+    float: right
+}
+
+h1 {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 27px;
+    font-size: 20px;
+    line-height: 36px;
+    color: #333;
+    border-bottom: 1px solid #e5e5e5;
+}
+h1 small {
+    font-size: 75%;
+}
+
+.breadcrumb {
+    background-color: #fbfbfb;
+    border: 1px solid #ddd;
+}
+
+#login-form {
+    margin-bottom: 0;
+}
+#login-form .form-actions {
+    background: none;
+    padding-bottom: 0;
+}
+
+.grid-view table th,
+.grid-view table td {
+    font-size: 13px;
+}
+
+div.rememberMe {
+    display: block;
+    margin-left: 60px;
+}
+p.hint {
+    float: left;
+    display: block;
+}
+.extra {
+    border-top: 1px solid #000;
+    padding: 20px 0;
+    font-size: 11px;
+    color: #bbb;
+    background: #1a1a1a;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+.extra ul {
+    width: 300px;
+}
+.extra a {
+    color: #666;
+}
+.extra h4 {
+    margin-bottom: 1em;
+    font-weight: 400;
+}
+.extra ul {
+    padding: 0;
+    margin: 0;
+}
+.extra ul li {
+    margin-bottom: .6em;
+    list-style: none;
+}
+
+.footer {
+    margin-top: 0;
+    border-top: 1px solid #000;
+    padding: 15px 0;
+    font-size: 12px;
+    background: #111;
+    color: #999;
+    box-shadow: inset 0 1px 0 #292929;
+}
+.footer #footer-terms {
+    text-align: right;
+    bottom: 0;
+}
+.footer a {
+    color: #fff;
+}
+.footer a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.form {
+    position: relative;
+}
+.form form {
+    margin-bottom: 0;
+}
+.form-actions {
+    margin-bottom: 0;
+}
+.controls-wrapper {
+    position: relative;
+}
+/*@media (min-width: 1100px) {
+    .status-wrapper {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 360px;
+        z-index: 1;
+    }
+}*/
+.toggle-button span {
+    font-weight: normal;
+}
+
+.input-xxxlarge {
+    width: 800px;
+    box-sizing: border-box;
+}
+@media (max-width: 767px) {
+    .input-xxxlarge {
+        width: 100%;
+    }
+}
+
+.grid-view .button-column {
+    width: auto;
+}
+
+table.items td a {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+table.items td a:first-of-type {
+    margin-left: 0;
+}
+table.items td a:last-of-type {
+    margin-right: 0;
+}
+
+.cke_reset_all img {
+    max-width: none;
+}
+.help-block {
+    font-size: 12px;
+}
+.help-block img {
+    display: block;
+    margin: 10px 0;
+}
+
+/*.page-alert {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    padding: 10px 15px;
+    z-index: 1100;
+}*/
+/*.page-message {
+    position: fixed;
+    left: 50%;
+    top: 20px;
+    width: 300px;
+    margin: 0 0 0 -150px;
+    padding: 10px 15px;
+    text-align: center;
+    z-index: 1100;
+}*/
+
+.form-items {
+    margin-top: 80px;
+}
+
+/* copytext */
+.copytext {
+    white-space: nowrap;
+    cursor: pointer;
+    border-bottom: 1px dashed #dfe3e6;
+}
+.copytext:hover {
+    border-bottom-color: #c3cbcf;
+}
+
+/* notify-box */
+.notify-box {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 9998;
+}
+.notify-box .alert {
+    width: 300px;
+    margin: 0 0 10px;
+}
+.notify-box .alert.notify-auto-width {
+    width: auto;
+}
+@media screen and (max-width: 399px) {
+    .notify-box {
+        left: 15px;
+        right: 15px;
+        top: 15px;
+    }
+    .notify-box .alert {
+        width: 100%;
+    }
+    .notify-box .alert.notify-auto-width {
+        width: auto;
+    }
+}
+
+.loading-indicator {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    padding: 10px 15px;
+    z-index: 9999;
+}
+
+.color-square {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    border: 1px dashed rgba(0, 0, 0, 0.7);
+    background-clip: padding-box !important;
+}
+
+/* preview test widget */
+.preview-test-widget {
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+    height: 100vh;
+}
+.preview-test-widget iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border: 0;
+}
+.toggle-preview-test-widget {
+    display: none;
+}
+@media screen and (min-width: 1024px) {
+    .preview-test-widget {
+        position: fixed;
+        width: 45%;
+        height: auto;
+        margin: 0;
+        right: 0;
+        top: 50px;
+        bottom: 40px;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 5px rgba(204, 204, 204, 0.7);
+        background: #fff;
+    }
+    .toggle-preview-test-widget {
+        display: block;
+        position: absolute;
+        right: 100%;
+        bottom: -1px;
+        padding: 6px 9px;
+        background: #fff;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        border-right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    /* hidden state */
+    .preview-test-widget.hidden-test-widget {
+        width: 0;
+    }
+    .preview-test-widget.hidden-test-widget iframe {
+        display: none;
+    }
+    /* toggle arrows */
+    .preview-test-widget:not(.hidden-test-widget) .toggle-preview-test-widget .icon-arrow-left {
+        display: none;
+    }
+    .preview-test-widget.hidden-test-widget .toggle-preview-test-widget .icon-arrow-right {
+        display: none;
+    }
+}
+
+.navbar .nav > li > a {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.navbar .brand {
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+input.cke_dialog_ui_input_text,
+input.cke_dialog_ui_input_password,
+input.cke_dialog_ui_input_tel,
+textarea.cke_dialog_ui_input_textarea {
+    margin-bottom: 0;
+}
+
+td.no-image {
+    background-color: #fcf8e3 !important;
+}
+.odd td.no-image {
+    background-color: #f7f3df !important;
+}

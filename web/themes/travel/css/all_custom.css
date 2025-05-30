@@ -1,0 +1,13 @@
+.paymentDisable {
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+.user__gift_email {
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+.user__gift_email_subscriptions {
+    padding-bottom: 50px;
+}

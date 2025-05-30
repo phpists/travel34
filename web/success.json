@@ -1,0 +1,233 @@
+{
+  "id": "evt_1Q52gSB5rrrRostLsg1QnRRH",
+  "object": "event",
+  "api_version": "2022-11-15",
+  "created": 1727776074,
+  "data": {
+    "object": {
+      "id": "in_1Q52gPB5rrrRostLjLyK1MW1",
+      "object": "invoice",
+      "account_country": "US",
+      "account_name": null,
+      "account_tax_ids": null,
+      "amount_due": 500,
+      "amount_paid": 500,
+      "amount_remaining": 0,
+      "amount_shipping": 0,
+      "application": null,
+      "application_fee_amount": null,
+      "attempt_count": 1,
+      "attempted": true,
+      "auto_advance": false,
+      "automatic_tax": {
+        "enabled": false,
+        "liability": null,
+        "status": null
+      },
+      "automatically_finalizes_at": null,
+      "billing_reason": "subscription_create",
+      "charge": "ch_3Q52gPB5rrrRostL1kFwfvE6",
+      "collection_method": "charge_automatically",
+      "created": 1727776073,
+      "currency": "eur",
+      "custom_fields": null,
+      "customer": "cus_QwwZf11SpaPCgD",
+      "customer_address": {
+        "city": null,
+        "country": "UA",
+        "line1": null,
+        "line2": null,
+        "postal_code": null,
+        "state": null
+      },
+      "customer_email": "andy.tsyupa@gmail.com",
+      "customer_name": "AndyT",
+      "customer_phone": null,
+      "customer_shipping": null,
+      "customer_tax_exempt": "none",
+      "customer_tax_ids": [
+      ],
+      "default_payment_method": null,
+      "default_source": null,
+      "default_tax_rates": [
+      ],
+      "description": null,
+      "discount": null,
+      "discounts": [
+      ],
+      "due_date": null,
+      "effective_at": 1727776073,
+      "ending_balance": 0,
+      "footer": null,
+      "from_invoice": null,
+      "hosted_invoice_url": "https://invoice.stripe.com/i/acct_1N1StgB5rrrRostL/test_YWNjdF8xTjFTdGdCNXJyclJvc3RMLF9Rd3daSkxnc3JjUEJPNnRmVm0yUjM2MHpqVWVsdHNCLDExODMxNjg3Ng0200KREwH88p?s=ap",
+      "invoice_pdf": "https://pay.stripe.com/invoice/acct_1N1StgB5rrrRostL/test_YWNjdF8xTjFTdGdCNXJyclJvc3RMLF9Rd3daSkxnc3JjUEJPNnRmVm0yUjM2MHpqVWVsdHNCLDExODMxNjg3Ng0200KREwH88p/pdf?s=ap",
+      "issuer": {
+        "type": "self"
+      },
+      "last_finalization_error": null,
+      "latest_revision": null,
+      "lines": {
+        "object": "list",
+        "data": [
+          {
+            "id": "il_1Q52gPB5rrrRostLM1rH8S5O",
+            "object": "line_item",
+            "amount": 500,
+            "amount_excluding_tax": 500,
+            "currency": "eur",
+            "description": "1 × Подписка на месяц (at €5.00 / month)",
+            "discount_amounts": [
+            ],
+            "discountable": true,
+            "discounts": [
+            ],
+            "invoice": "in_1Q52gPB5rrrRostLjLyK1MW1",
+            "livemode": false,
+            "metadata": {
+            },
+            "period": {
+              "end": 1730454473,
+              "start": 1727776073
+            },
+            "plan": {
+              "id": "price_1Q3EVxB5rrrRostLmV7mj7g8",
+              "object": "plan",
+              "active": true,
+              "aggregate_usage": null,
+              "amount": 500,
+              "amount_decimal": "500",
+              "billing_scheme": "per_unit",
+              "created": 1727344897,
+              "currency": "eur",
+              "interval": "month",
+              "interval_count": 1,
+              "livemode": false,
+              "metadata": {
+              },
+              "meter": null,
+              "nickname": null,
+              "product": "prod_Qv4fUmG8e5q0YT",
+              "tiers_mode": null,
+              "transform_usage": null,
+              "trial_period_days": null,
+              "usage_type": "licensed"
+            },
+            "price": {
+              "id": "price_1Q3EVxB5rrrRostLmV7mj7g8",
+              "object": "price",
+              "active": true,
+              "billing_scheme": "per_unit",
+              "created": 1727344897,
+              "currency": "eur",
+              "custom_unit_amount": null,
+              "livemode": false,
+              "lookup_key": null,
+              "metadata": {
+              },
+              "nickname": null,
+              "product": "prod_Qv4fUmG8e5q0YT",
+              "recurring": {
+                "aggregate_usage": null,
+                "interval": "month",
+                "interval_count": 1,
+                "meter": null,
+                "trial_period_days": null,
+                "usage_type": "licensed"
+              },
+              "tax_behavior": "unspecified",
+              "tiers_mode": null,
+              "transform_quantity": null,
+              "type": "recurring",
+              "unit_amount": 500,
+              "unit_amount_decimal": "500"
+            },
+            "proration": false,
+            "proration_details": {
+              "credited_items": null
+            },
+            "quantity": 1,
+            "subscription": "sub_1Q52gPB5rrrRostL5jab7or9",
+            "subscription_item": "si_QwwZwriovZKcPd",
+            "tax_amounts": [
+            ],
+            "tax_rates": [
+            ],
+            "type": "subscription",
+            "unit_amount_excluding_tax": "500"
+          }
+        ],
+        "has_more": false,
+        "total_count": 1,
+        "url": "/v1/invoices/in_1Q52gPB5rrrRostLjLyK1MW1/lines"
+      },
+      "livemode": false,
+      "metadata": {
+      },
+      "next_payment_attempt": null,
+      "number": "56F8C200-0001",
+      "on_behalf_of": null,
+      "paid": true,
+      "paid_out_of_band": false,
+      "payment_intent": "pi_3Q52gPB5rrrRostL1GebZzZO",
+      "payment_settings": {
+        "default_mandate": null,
+        "payment_method_options": {
+          "acss_debit": null,
+          "bancontact": null,
+          "card": {
+            "request_three_d_secure": "automatic"
+          },
+          "customer_balance": null,
+          "konbini": null,
+          "sepa_debit": null,
+          "us_bank_account": null
+        },
+        "payment_method_types": null
+      },
+      "period_end": 1727776073,
+      "period_start": 1727776073,
+      "post_payment_credit_notes_amount": 0,
+      "pre_payment_credit_notes_amount": 0,
+      "quote": null,
+      "receipt_number": null,
+      "rendering": null,
+      "rendering_options": null,
+      "shipping_cost": null,
+      "shipping_details": null,
+      "starting_balance": 0,
+      "statement_descriptor": null,
+      "status": "paid",
+      "status_transitions": {
+        "finalized_at": 1727776073,
+        "marked_uncollectible_at": null,
+        "paid_at": 1727776074,
+        "voided_at": null
+      },
+      "subscription": "sub_1Q52gPB5rrrRostL5jab7or9",
+      "subscription_details": {
+        "metadata": {
+        }
+      },
+      "subtotal": 500,
+      "subtotal_excluding_tax": 500,
+      "tax": null,
+      "test_clock": null,
+      "total": 500,
+      "total_discount_amounts": [
+      ],
+      "total_excluding_tax": 500,
+      "total_tax_amounts": [
+      ],
+      "transfer_data": null,
+      "webhooks_delivered_at": null
+    }
+  },
+  "livemode": false,
+  "pending_webhooks": 2,
+  "request": {
+    "id": "req_4LzDG22hkDcqwe",
+    "idempotency_key": "2f8d6531-3230-4853-b48a-0d635e66d2ad"
+  },
+  "type": "invoice.payment_succeeded"
+}

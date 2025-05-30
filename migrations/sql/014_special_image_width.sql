@@ -1,0 +1,1 @@
+ALTER TABLE `tr_special_project` ADD `image_width` int(11) NULL AFTER `image`;

@@ -1,0 +1,1 @@
+ALTER TABLE `tr_post` ADD `is_home_first_top` tinyint(1) NOT NULL DEFAULT '0' AFTER `is_home_top`;

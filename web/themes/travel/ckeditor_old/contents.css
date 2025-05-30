@@ -1,0 +1,322 @@
+/*font-family: Arial Black, "Helvetica CY", "Nimbus Sans L", sans-serif*/
+/*font-family: Arial, "Helvetica CY", sans-serif*/
+/*font-family: Comic Sans MS, "Helvetica CY", "Nimbus Sans L", sans-serif*/
+/*font-family: Courier New, "Nimbus Mono L", monospace*/
+/*font-family: Georgia, "Century Schoolbook L", serif*/
+/*font-family: Impact, "Charcoal CY", sans-serif*/
+/*font-family: Times New Roman, "Times CY", "Nimbus Roman No9 L", sans-serif*/
+/*font-family: Trebuchet MS, "Helvetica CY", sans-serif*/
+/*font-family: Verdana, "Geneva CY", "DejaVu Sans", sans-serif*/
+
+@font-face {
+    font-family: 'pt_serifregular';
+    src: url('../fonts/ptserifregular-webfont.eot');
+    src: url('../fonts/ptserifregular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ptserifregular-webfont.woff2') format('woff2'),
+    url('../fonts/ptserifregular-webfont.woff') format('woff'),
+    url('../fonts/ptserifregular-webfont.ttf') format('truetype'),
+    url('../fonts/ptserifregular-webfont.svg#pt_serifregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bebas_neue_regularregular';
+    src: url('../fonts/bebasneue_regular-webfont.eot');
+    src: url('../fonts/bebasneue_regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/bebasneue_regular-webfont.woff2') format('woff2'),
+    url('../fonts/bebasneue_regular-webfont.woff') format('woff'),
+    url('../fonts/bebasneue_regular-webfont.ttf') format('truetype'),
+    url('../fonts/bebasneue_regular-webfont.svg#bebas_neue_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bebas_neuebold';
+    src: url('../fonts/bebasneue_bold-webfont.eot');
+    src: url('../fonts/bebasneue_bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/bebasneue_bold-webfont.woff2') format('woff2'),
+    url('../fonts/bebasneue_bold-webfont.woff') format('woff'),
+    url('../fonts/bebasneue_bold-webfont.ttf') format('truetype'),
+    url('../fonts/bebasneue_bold-webfont.svg#bebas_neuebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'helioscondregular';
+    src: url('../fonts/helioscond-webfont.eot');
+    src: url('../fonts/helioscond-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/helioscond-webfont.woff2') format('woff2'),
+    url('../fonts/helioscond-webfont.woff') format('woff'),
+    url('../fonts/helioscond-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'league_gothicregular';
+    src: url('../fonts/leaguegothiccyrillic-webfont.eot');
+    src: url('../fonts/leaguegothiccyrillic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/leaguegothiccyrillic-webfont.woff') format('woff'),
+    url('../fonts/leaguegothiccyrillic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font: 12px Arial, Helvetica, sans-serif;
+    color: #000;
+    background-color: #fff;
+    margin: 15px;
+}
+.cke_editable {
+    font-size: 14px;
+    line-height: 1.5em;
+    word-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    line-height: 1.2em;
+}
+.cke_editable h1, .cke_editable h2, .cke_editable h3, .cke_editable h4, .cke_editable h5, .cke_editable h6 {
+    font-weight: normal;
+    line-height: 1.2em;
+    margin: 1rem 0;
+}
+.cke_editable h1 {
+    font-size: 2em;
+}
+.cke_editable h2 {
+    font-size: 1.8em;
+}
+.cke_editable h3 {
+    font-size: 1.6em;
+}
+.cke_editable h4 {
+    font-size: 1.4em;
+}
+.cke_editable h5 {
+    font-size: 1.2em;
+}
+.cke_editable h6 {
+    font-size: 1em;
+}
+.cke_editable p {
+    margin: 1rem 0;
+}
+
+ul, ol {
+    list-style-position: outside;
+    margin-left: 3em;
+    padding: 0;
+}
+ul ul, ol ol, ul ol, ol ul {
+    margin-bottom: 0;
+}
+
+dl dt {
+    font-weight: bold;
+}
+dl dd {
+    margin-left: 1.5em;
+}
+
+a {
+    color: #0782c1;
+    text-decoration: underline;
+}
+a img {
+    border: none;
+}
+a > img {
+    outline: 2px solid #0782c1;
+}
+abbr {
+    border-bottom: 1px dotted #666;
+}
+small, sup, sub {
+    font-size: 11px;
+}
+address, dfn, var {
+    font-style: italic;
+}
+ins {
+    text-decoration: underline;
+}
+del {
+    text-decoration: line-through;
+}
+
+blockquote {
+    font: normal 14px Georgia, "Times New Roman", serif;
+    font-style: italic;
+    margin: 1rem 3em;
+    padding: 2px 10px;
+}
+.cke_contents_ltr blockquote {
+    border-left: 5px solid #ccc;
+}
+.cke_contents_rtl blockquote {
+    border-right: 5px solid #ccc;
+}
+.cke_editable blockquote p {
+    margin: 0;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    -moz-tab-size: 4;
+    tab-size: 4;
+}
+.cke_editable pre {
+    background-color: #eee;
+    padding: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+th, td {
+    padding: 5px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+/* custom */
+div {
+    outline: 1px dashed #fcc;
+}
+div.full-width {
+    outline: 1px dashed #cfc;
+    margin-bottom: 10px;
+}
+.full-width-2col,
+.full-width-3col,
+.full-width-4col,
+.full-width-5col,
+.full-width-300col,
+.full-width-600col {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.full-width-2col > div,
+.full-width-3col > div,
+.full-width-4col > div,
+.full-width-5col > div,
+.full-width-300col > div,
+.full-width-600col > div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    padding: 10px;
+}
+.full-width-2col:before,
+.full-width-2col:after,
+.full-width-3col:before,
+.full-width-3col:after,
+.full-width-4col:before,
+.full-width-4col:after,
+.full-width-5col:before,
+.full-width-5col:after,
+.full-width-300col:before,
+.full-width-300col:after,
+.full-width-600col:before,
+.full-width-600col:after {
+    content: " ";
+    display: table;
+}
+.full-width-2col:after,
+.full-width-3col:after,
+.full-width-4col:after,
+.full-width-5col:after,
+.full-width-300col:after,
+.full-width-600col:after {
+    clear: both;
+}
+.full-width-2col > div {
+    width: 50%;
+}
+.full-width-3col > div {
+    width: 33.33%;
+}
+.full-width-4col > div {
+    width: 25%;
+}
+.full-width-5col > div {
+    width: 20%;
+}
+.full-width-300col > div:first-of-type {
+    width: 30%;
+}
+.full-width-300col > div:last-of-type {
+    width: 70%;
+}
+.full-width-600col > div:first-of-type {
+    width: 70%;
+}
+.full-width-600col > div:last-of-type {
+    width: 30%;
+}
+.bg-full-width-black,
+.bg-fullwidthcolor,
+.bg-full-width-color-wrap {
+    outline: 1px dashed #eee;
+}
+.bg-full-width-black {
+    background: #000;
+    color: #fff;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.bg-fullwidthcolor {
+    background: #fdffb6;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.bg-full-width-color-wrap {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.bg-full-width-black.full-width-box,
+.bg-fullwidthcolor.full-width-box {
+    margin-left: 0;
+    margin-right: 0;
+}
+.text-content,
+.text-content-small {
+    padding: 10px;
+}
+.text-content-small {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.cke_editable img {
+    max-width: 100% !important;
+    height: auto !important;
+}
+.full-width-img {
+    margin-bottom: 10px;
+}
+.full-width-img.full-width-box img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slider-with-part,
+.slider-with-part div,
+.slider-with-part p.counter {
+    outline: 1px dashed #ccf;
+    padding: 10px;
+}

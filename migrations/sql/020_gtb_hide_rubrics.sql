@@ -1,0 +1,2 @@
+ALTER TABLE `tr_gtb_rubric` ADD `hide_in_menu` tinyint(1) NOT NULL DEFAULT '0' AFTER `in_todo_list`;
+ALTER TABLE `tr_gtb_rubric` ADD `hide_in_menu_en` tinyint(1) NOT NULL DEFAULT '0' AFTER `hide_in_menu`;

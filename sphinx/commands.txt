@@ -1,0 +1,31 @@
+yum install postgresql-libs unixODBC
+cd /tmp
+yum install wget
+wget http://sphinxsearch.com/files/sphinx-2.3.2-1.rhel7.x86_64.rpm
+yum install -y sphinx-2.3.2-1.rhel7.x86_64.rpm
+
+---
+
+# create index (run before start daemon)
+su -c "indexer --all" -s /bin/bash sphinx
+
+# rotate indexes
+su -c "indexer --rotate --all" -s /bin/bash sphinx
+
+# run search daemon
+systemctl start searchd
+
+# enable autoload
+systemctl enable searchd
+
+
+su -s /bin/bash sphinx
+crontab crontab.txt
+
+---
+
+sphinx 2.3.2-1 doesn't start on Centos 7 (RHEL 7)
+http://sphinxsearch.com/forum/view.html?id=16066
+
+/usr/lib/systemd/system/searchd.service
+Replace TimeoutStartSec=infinity with TimeoutStartSec=0

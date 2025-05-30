@@ -1,0 +1,21 @@
+CKEDITOR.stylesSet.add('full_width', [
+    {name: 'Image Full Width', element: 'img', attributes: {'class': 'img-f-width'}},
+    {name: 'Div Wide Box', element: 'div', attributes: {'class': 'wide-box'}},
+    {name: 'Div Full Width Box', element: 'div', attributes: {'class': 'full-width-box'}},
+    {name: 'Div 2 Cols', element: 'div', attributes: {'class': 'row col-2'}},
+    {name: 'Div 3 Cols', element: 'div', attributes: {'class': 'row col-3'}},
+    {name: 'Div 4 cols', element: 'div', attributes: {'class': 'row col-4'}},
+    {name: 'Div 5 cols', element: 'div', attributes: {'class': 'row col-5'}},
+    {name: 'Div 300/600 cols', element: 'div', attributes: {'class': 'row small-left'}},
+    {name: 'Div 600/300 cols', element: 'div', attributes: {'class': 'row small-right'}},
+    {name: 'Div 150/750 cols', element: 'div', attributes: {'class': 'row very-small-left'}},
+    {name: 'Div 750/150 cols', element: 'div', attributes: {'class': 'row very-small-right'}},
+    {name: 'Div 150/450 cols', element: 'div', attributes: {'class': 'row small-left content-wide'}},
+    {name: 'Div 450/150 cols', element: 'div', attributes: {'class': 'row small-right content-wide'}},
+    {name: 'Div Column', element: 'div', attributes: {'class': 'col'}},
+    {name: 'Div Content', element: 'div', attributes: {'class': 'content'}},
+    {name: 'Div Full Width Box No Margin', element: 'div', attributes: {'class': 'full-width-box no-margin'}},
+    {name: 'Div Full Width Box BG Repeat', element: 'div', attributes: {'class': 'full-width-box bg-repeat'}},
+    {name: 'Div Full Width Box BG Repeat No Margin', element: 'div', attributes: {'class': 'full-width-box bg-repeat no-margin'}},
+    {name: 'Div Video Wrapper', element: 'div', attributes: {'class': 'videoWrapper'}}
+]);

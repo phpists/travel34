@@ -1,0 +1,1 @@
+ALTER TABLE `tr_seo_tag` ADD `image` varchar(255) NULL AFTER `description`;

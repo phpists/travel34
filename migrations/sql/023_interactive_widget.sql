@@ -1,0 +1,68 @@
+--- 04.01.2019, upd 08.01.2019, 09.01.2019
+
+DROP TABLE IF EXISTS `tr_interactive_result`;
+DROP TABLE IF EXISTS `tr_interactive_widget`;
+
+CREATE TABLE `tr_interactive_widget` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` tinytext,
+  `skip_step2` tinyint(1) NOT NULL DEFAULT '0',
+  `step3_title` tinytext,
+  `image` varchar(255) DEFAULT NULL,
+  `background_color` varchar(6) DEFAULT NULL,
+  `background_image` varchar(255) DEFAULT NULL,
+  `step3_background_color` varchar(6) DEFAULT NULL,
+  `step3_background_image` varchar(255) DEFAULT NULL,
+  `has_border` tinyint(1) NOT NULL DEFAULT '0',
+  `border_color` varchar(6) DEFAULT NULL,
+  `step1_title_color` varchar(6) DEFAULT NULL,
+  `step1_title_has_border` tinyint(1) NOT NULL DEFAULT '0',
+  `step1_title_border_color` varchar(6) DEFAULT NULL,
+  `step2_title_color` varchar(6) DEFAULT NULL,
+  `step2_title_has_border` tinyint(1) NOT NULL DEFAULT '0',
+  `step2_title_border_color` varchar(6) DEFAULT NULL,
+  `step3_title_color` varchar(6) DEFAULT NULL,
+  `step3_title_has_border` tinyint(1) NOT NULL DEFAULT '0',
+  `step3_title_border_color` varchar(6) DEFAULT NULL,
+  `step3_text_after` varchar(255) DEFAULT NULL,
+  `step1_button_color` varchar(6) DEFAULT NULL,
+  `step1_button_border_color` varchar(6) DEFAULT NULL,
+  `step1_button_shadow_color` varchar(6) DEFAULT NULL,
+  `step1_button_hover_color` varchar(6) DEFAULT NULL,
+  `step1_button_hover_shadow_color` varchar(6) DEFAULT NULL,
+  `step2_button_color` varchar(6) DEFAULT NULL,
+  `step2_button_border_color` varchar(6) DEFAULT NULL,
+  `step2_button_shadow_color` varchar(6) DEFAULT NULL,
+  `step2_button_hover_color` varchar(6) DEFAULT NULL,
+  `step2_button_hover_shadow_color` varchar(6) DEFAULT NULL,
+  `step3_button_color` varchar(6) DEFAULT NULL,
+  `step3_button_border_color` varchar(6) DEFAULT NULL,
+  `step3_button_shadow_color` varchar(6) DEFAULT NULL,
+  `step3_button_hover_color` varchar(6) DEFAULT NULL,
+  `step3_button_hover_shadow_color` varchar(6) DEFAULT NULL,
+  `step2_text` tinytext,
+  `step2_text_color` varchar(6) DEFAULT NULL,
+  `step3_text_color` varchar(6) DEFAULT NULL,
+  `has_top_branding` tinyint(1) NOT NULL DEFAULT '0',
+  `top_branding_image` varchar(255) DEFAULT NULL,
+  `top_branding_mobile_image` varchar(255) DEFAULT NULL,
+  `top_branding_url` varchar(255) DEFAULT NULL,
+  `has_bottom_branding` tinyint(1) NOT NULL DEFAULT '0',
+  `bottom_branding_image` varchar(255) DEFAULT NULL,
+  `bottom_branding_mobile_image` varchar(255) DEFAULT NULL,
+  `bottom_branding_url` varchar(255) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE `tr_interactive_result` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `interactive_widget_id` int(11) DEFAULT NULL,
+  `text` text,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `interactive_widget_id` (`interactive_widget_id`),
+  CONSTRAINT `fk_interactive_result_widget_id` FOREIGN KEY (`interactive_widget_id`) REFERENCES `tr_interactive_widget` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
