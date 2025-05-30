@@ -1,0 +1,16 @@
+{
+  "require": {
+    "hybridauth/hybridauth": "dev-master#9309258df80e8eadbafeb07ed762f96c9cbf6f9d as 3.0.x-dev",
+    "yiisoft/yii": "^1.1",
+    "phpmailer/phpmailer": "^5.2",
+    "whichbrowser/parser": "^2.0",
+    "stripe/stripe-php": "^15.10",
+    "swiftmailer/swiftmailer": "^6.3"
+  },
+  "config": {
+    "preferred-install": "dist",
+    "platform": {
+      "php": "7.4.0"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+Options +FollowSymLinks -Indexes
+
+AddDefaultCharset utf-8
+
+<IfModule mod_headers.c>
+    Header set Strict-Transport-Security "max-age=31536000" env=HTTPS
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{HTTP_HOST} ^www\.34t.farbatest\.com [NC]
+    RewriteRule ^(.*)$ https://farbatest.com/$1 [R=301,L]
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule \.(gif|jpe?g|png)$ image404.php [L]
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^gotobelarus/cmsmagazine([a-f0-9]+)\.txt cmsmagazine$1.txt [L]
+
+    RewriteCond %{REQUEST_URI} !\.(php|jpe?g|png|gif|tiff?|css|js|txt|pdf|docx?|xlsx?|pptx?|ppsx?)$ [NC]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^admin(.*)$ admin.php [L,QSA]
+
+    RewriteCond %{REQUEST_URI} !/server-status$
+    RewriteCond %{REQUEST_URI} !\.(php|jpe?g|png|gif|tiff?|css|js|txt|pdf|docx?|xlsx?|pptx?|ppsx?)$ [NC]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php [L,QSA]
+</IfModule>
